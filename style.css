@@ -9,17 +9,7 @@
 }
 /* scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
-}
- 
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 100px rgba(255, 255, 255, 0); 
-    border-radius: 3px;
-}
- 
-::-webkit-scrollbar-thumb {
-    border-radius: 3px;
-    -webkit-box-shadow: inset 0 0 100px rgb(221, 67, 20); 
+    display: none;
 }
 /* Scrollbar */
 html {
@@ -35,7 +25,6 @@ body {
 a {
     text-decoration: none;
     outline: none;
-    /* color: #fff; */
 }
 p {
     font-size: 1.7rem;
@@ -58,22 +47,17 @@ ul {
     margin-left: auto;
     margin-right: auto;
     width: 1210px;
+    height: 100px;
     display: flex;
     align-items: stretch;
     text-align: center;
     z-index: 1000;
-}
-.container .header > div {
-    /* display: inline-block; */
-    /* min-height: 120px;
-    max-height: 120px; */
 }
 .container .header .header__box.box__logo {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* flex-grow: 1; */
     background-color: rgba(0, 16, 33, 0.8);
     backdrop-filter: blur(12px);
     padding: 50px 5px;
@@ -101,7 +85,6 @@ ul {
 .container .header .header__box.box__menu {
     display: flex;
     width: 100%;
-    /* flex-grow: 3; */
     justify-content: center;
     align-items:center;
     background-color: rgba(244, 211, 94, 0.5);
@@ -157,24 +140,12 @@ ul {
     display: inline-block;
     flex-direction: column;
     width: 50%;
-    height: 200px;
+    height: 100%;
     padding: 20px 10px 0;
     background-color: #F8BD7F;
     overflow: auto;
     color: #fff;
-}
-#about .about .des::-webkit-scrollbar {
-    width: 4px;
-}
- 
-#about .about .des::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 100px #faaa68; 
-    border-radius: 3px;
-}
- 
-#about .about .des::-webkit-scrollbar-thumb {
-    border-radius: 3px;
-    -webkit-box-shadow: inset 0 0 100px #fff; 
+    box-shadow: inset 0px 0px 10px 2px #e7a865;
 }
 #about .des h2 {
     font-size: 3.5rem;
@@ -218,6 +189,7 @@ ul {
     /* height: 100%; */
     overflow: auto;
     background-color:#FFD275;
+    padding:  0 10px;
 }
 #gallery .gallery .title > h2 {
     font-size: 3.5rem;
@@ -239,6 +211,8 @@ ul {
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 10px 3px #e7a865;
 }
 #gallery .gallery .catalog .catalog__list {
     justify-content: space-between;
@@ -303,21 +277,6 @@ ul {
 }
 #gallery .gallery .catalog .catalog__list.doremon .manga__list.chap .chap__list:hover {
     transform: scale(1.1);
-}
-#gallery .gallery .catalog::-webkit-scrollbar {
-    /* background-color: #1876f2; */
-    width: 4px;
-}
- 
-#gallery .gallery .catalog::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 100px #6d515d; 
-    border-radius: 4px;
-}
- 
-#gallery .gallery .catalog::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    width: 8px;
-    -webkit-box-shadow: inset 0 0 100px #fff; 
 }
 #contact {
     padding-top: 180px;
