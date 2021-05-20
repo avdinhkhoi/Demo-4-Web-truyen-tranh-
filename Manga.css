@@ -19,8 +19,8 @@ a {
     text-decoration: none;
 }
 .container {
-    background-color: rgb(5, 34, 48);
-    /* background: linear-gradient(#8093F1, #2E5EAA); */
+    /* background-color: rgba(19, 40, 161, 0.4); */
+    background: linear-gradient(#EDB6A3, #3E2F5B, #2E5EAA, #E88D67);
     background-size: cover;
 }
 .container .sidebar {
@@ -92,7 +92,7 @@ a {
     background-color: #2E5EAA;
     border-radius: 2px;
     box-shadow: 1px 4px 3px 1px rgba(1, 2, 70, 0.7);
-    transition: 0.3s;
+    transition: 0.15s;
 }
 .container .sidebar .menu div a:hover {
     transform: translateX(6px);
