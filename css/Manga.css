@@ -19,8 +19,8 @@ a {
     text-decoration: none;
 }
 .container {
-    /* background-color: rgba(19, 40, 161, 0.4); */
-    background: linear-gradient(#EDB6A3, #3E2F5B, #E88D67);
+    background-color: #EDB6A3;
+    /* background: linear-gradient(#EDB6A3, #3E2F5B, #E88D67); */
     background-size: cover;
 }
 .container .sidebar {
