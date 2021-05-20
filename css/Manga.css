@@ -23,17 +23,36 @@ a {
     /* background: linear-gradient(#EDB6A3, #3E2F5B, #E88D67); */
     background-size: cover;
 }
+.container .btn__active {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 54px;
+    opacity: 0.8;
+    transition: 0.1s;
+    cursor: pointer;
+    user-select: none;
+    /* display: none; */
+}
+.container .btn__active:active {
+    font-size: 64px;
+}
 .container .sidebar {
     position: fixed;
     top: 0;
     left: 0;
     width: 200px;
+    max-width: 200px;
     height: 100vh;
     padding: 0px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1000;
+    transition: 0.3s cubic-bezier(0.77, 0, 0.175, 1);;
+}
+.container .sidebar.active {
+    left: -100%;
+    transition: 0.4s cubic-bezier(0.77, 0, 0.175, 1);;
 }
 .container .sidebar .logo {
     width: 100%;
@@ -55,31 +74,73 @@ a {
 .container .sidebar .menu {
     width: 100%;
     height: 100%;
-    padding: 20px 10px;
-    display: flex;
-    flex-direction: column;
+    padding: 0px 10px 40px;
+    display: inline-block;
+    /* flex-direction: column; */
     justify-content: flex-start;
     align-items: center;
     background-color: rgba(0, 16, 33, 0.1);
     overflow: auto;
     backdrop-filter: blur(15px);
 }
-.container .sidebar .menu h4 {
+.container .sidebar .menu .album {
+    position: sticky;
+    top: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 10px);
+    height: 79px;
+    padding: 5px;
+    font-size: 24px;
+    margin: 20px 0;
+    color: #fff;
+    border: 2px solid #001021;
+    border-radius: 4px;
+    background-color: #001021;
+    z-index: 10;
+}
+.container .sidebar .menu .album .list {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    padding: 20px 0;
+    height: 100%;
+    background-color: #f4d35e;
+    border-radius: 1px;
+    overflow: auto;
+}
+.container .sidebar .menu .album .list .list__items {
+    display: flex;
+    flex-direction: column;
+}
+.container .sidebar .menu .album .list .list__items a {
+    padding: 5px 0;
+    width: calc(100% - 30px);
+    height: calc(100% - 35px);
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #001021;
+    border-radius: 4px;
+}
+.container .sidebar .menu h4 {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 30px 0;
     text-align: center;
     font-size: 24px;
     color: #fff;
-    border: 2px solid #fff;
+    border: 2px solid #001021;
     border-radius: 4px;
     background-color: #001021;
+    z-index: 10;
 }
-.container .sidebar .menu .menu__list div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container .sidebar .menu div > a {
+.container .sidebar .menu .menu__list > a {
     display: inline-block;
     align-items: center;
     justify-content: center;
@@ -95,7 +156,7 @@ a {
     box-shadow: 1px 4px 3px 1px rgba(1, 2, 70, 0.7);
     transition: 0.15s;
 }
-.container .sidebar .menu div a:hover {
+.container .sidebar .menu .menu__list a:hover {
     transform: translateX(6px);
 }
 .container .chap {
@@ -109,4 +170,42 @@ a {
     height: auto;
     padding: 0 15px;
     background-color: #2E5EAA;
+}
+@media all and (max-width: 1024px) {
+    .container .btn__active {
+        bottom: 120px;
+        right: 120px;
+        font-size: 54px;
+    }
+    .container .btn__active:active {
+        font-size: 64px;
+    }
+    .container .sidebar {
+        left: -100%;
+    }
+    .container .sidebar.active {
+        left: 0;
+        width: 50%;
+        max-width: 1366px;
+    }
+    .container .chap >img {
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+    }
+}
+@media all and (max-width: 768px) {
+    .container .btn__active {
+        right: 50px;
+        bottom: 50px;
+        font-size: 34px;
+    }
+    .container .btn__active:active {
+        font-size: 44px;
+    }
+    .container .sidebar.active {
+    width: 75%;
+    }
 }
