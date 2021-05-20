@@ -19,7 +19,7 @@ a {
     text-decoration: none;
 }
 .container {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgb(5, 34, 48);
     /* background: linear-gradient(#8093F1, #2E5EAA); */
     background-size: cover;
 }
@@ -49,6 +49,7 @@ a {
    font-weight: 600;
    font-family: 'Josefin Slab', serif;
    color: #fff;
+   border-bottom: 3px solid #f4d35e;
 }
 .container .sidebar .menu {
     width: 100%;

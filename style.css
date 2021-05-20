@@ -204,6 +204,13 @@ ul {
 #gallery .gallery .title > p {
     margin-bottom: 20px;
 }
+#gallery .gallery .title > p span {
+    font-size: 24px;
+}
+#gallery .gallery .title > p span a {
+    color: #fff;
+    font-weight: 400;
+}
 #gallery .gallery .catalog {
     display: flex;
     flex-direction: column;
