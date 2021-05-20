@@ -14,6 +14,7 @@
 /* Scrollbar */
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 body {
     background-image: linear-gradient(#D84A05, #F2AA7E, #fff);
