@@ -19,7 +19,7 @@ body {
     background-image: linear-gradient(#D84A05, #F2AA7E, #fff);
     background-size: cover;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 0 10px 100px;
+    /* padding: 0 10px 100px; */
     background-color: #F6F2FF;
 }
 a {
@@ -34,10 +34,10 @@ ul {
     list-style: none;
 }
 .container {
-    /* position: relative; */
-    max-width: 1210px;
     display: flex;
     flex-direction: column;
+    max-width: 1210px;
+    padding: 0 10px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -46,7 +46,8 @@ ul {
     top: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 1210px;
+    max-width: 1190px;
+    width: 100%;
     height: 100px;
     display: flex;
     align-items: stretch;
@@ -57,7 +58,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 30%;
     background-color: rgba(0, 16, 33, 0.8);
     backdrop-filter: blur(12px);
     padding: 50px 5px;
@@ -84,7 +85,7 @@ ul {
 }
 .container .header .header__box.box__menu {
     display: flex;
-    width: 100%;
+    width: 70%;
     justify-content: center;
     align-items:center;
     background-color: rgba(244, 211, 94, 0.5);
@@ -97,7 +98,7 @@ ul {
 .container .header .header__box.box__menu .menu__list a {
     display: inline-block;
     max-width: 200px;
-    min-width: 200px;
+    width: 200px;
     margin: 0 40px;
     padding: 20px 40px;
     font-size: 1.8rem;
@@ -219,6 +220,7 @@ ul {
     align-items: center;
     display: flex;
     width: 100%;
+    min-width: 500px;
     min-height: 210px;
     background-color: #274060;
     font-size: 1.7rem;

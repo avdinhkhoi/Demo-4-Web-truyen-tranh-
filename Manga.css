@@ -1,0 +1,108 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.7);
+}
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.9);
+    /* background: linear-gradient(#8093F1, #2E5EAA); */
+    background-size: cover;
+}
+.container .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .sidebar .logo {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001021;
+    margin-bottom: 10px;
+}
+.container .sidebar .logo a {
+   padding: 10px 25px;
+   font-size: 28px;
+   font-weight: 600;
+   font-family: 'Josefin Slab', serif;
+   color: #fff;
+}
+.container .sidebar .menu {
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0, 16, 33, 0.1);
+    overflow: auto;
+    backdrop-filter: blur(15px);
+}
+.container .sidebar .menu h4 {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    background-color: #001021;
+}
+.container .sidebar .menu .menu__list div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .sidebar .menu div a {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    padding: 5px 0;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    background-color: #2E5EAA;
+    border-radius: 2px;
+    box-shadow: 1px 4px 3px 1px rgba(1, 2, 70, 0.7);
+    transition: 0.3s;
+}
+.container .sidebar .menu div a:hover {
+    transform: translateX(6px);
+}
+.container .chap1 {
+    display: flex;
+    flex-direction: column;
+}
+.container .chap1 > img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: auto;
+}
