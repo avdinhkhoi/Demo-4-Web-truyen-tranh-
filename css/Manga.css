@@ -20,7 +20,7 @@ a {
 }
 .container {
     /* background-color: rgba(19, 40, 161, 0.4); */
-    background: linear-gradient(#EDB6A3, #3E2F5B, #2E5EAA, #E88D67);
+    background: linear-gradient(#EDB6A3, #3E2F5B, #E88D67);
     background-size: cover;
 }
 .container .sidebar {
@@ -106,4 +106,6 @@ a {
     margin-right: auto;
     width: 800px;
     height: auto;
+    padding: 0 15px;
+    background-color: #2E5EAA;
 }
