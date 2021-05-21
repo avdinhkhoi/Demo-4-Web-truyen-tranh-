@@ -235,7 +235,7 @@ ul {
     padding: 20px;
     transform: scale(0.9);
     transition: 0.2s;
-    /* overflow: auto; */
+    overflow: hidden;
 }
 #gallery .gallery .catalog .catalog__list:hover {
     transform: scale(0.94);
@@ -249,7 +249,7 @@ ul {
     background-color:#FFD275;
     border-radius: 10px;
     flex-wrap: wrap;
-    overflow-Y: auto;
+    overflow: auto;
     text-align: center;
 }
 #gallery .gallery .catalog .catalog__list.doremon .manga__list.chap h4 {
@@ -418,11 +418,12 @@ ul {
         height: 75px;
     }
     .container .header .header__box.box__logo {
-        width: 20%;
+        width: 25%;
         font-size: 1.2rem;
         padding: unset;
     }
     .container .header .header__box.box__menu {
+        margin-left: 0;
         display: flex;
         width: 100%;
         justify-content: space-evenly;
@@ -503,9 +504,8 @@ ul {
         min-width: 260px;
         /* min-height: 210px; */
     }
-    #gallery .gallery .catalog .catalog__list .manga__list img {
-        width: 64px;
-        height: 64px;
+    #gallery .gallery .catalog .catalog__list.doremon .manga__list.chap h4 {
+        padding: 30px 60px;
     }
     #contact {
         padding-top: 40px;
@@ -540,5 +540,8 @@ ul {
     .container .header .header__box.box__menu .menu__list a {
         width: 70px;
         padding: 10px 0;
+    }
+    #gallery .gallery .catalog .catalog__list.doremon .manga__list.chap h4 {
+        padding: 10px 5px;
     }
 }
