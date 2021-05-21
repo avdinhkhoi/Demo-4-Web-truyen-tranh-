@@ -406,6 +406,13 @@ ul {
         padding-top: 20px;  
         height: auto;
     }
+    #about .about .aaaa img {
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;    
+    }
     #gallery .gallery {
         display: flex;
         flex-direction: column;
