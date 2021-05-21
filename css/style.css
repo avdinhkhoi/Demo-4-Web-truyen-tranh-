@@ -464,6 +464,13 @@ ul {
         height: auto;
         /* padding-bottom: 20px; */
     }
+    .contact .info .img__contact img {
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;    
+    }
     .contact .info .box {
         justify-content: center;
         text-align: center;
