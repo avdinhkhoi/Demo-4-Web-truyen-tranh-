@@ -243,7 +243,8 @@ ul {
 }
 #gallery .gallery .catalog .catalog__list .manga__list.chap {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
     width: 70%;
     height: 100%;
     background-color:#FFD275;
@@ -468,7 +469,7 @@ ul {
     #gallery .gallery {
         display: flex;
         flex-direction: column;
-        /* height: 1000px; */
+        height: 1000px;
     }
     #gallery .gallery .title {
         width: 100%;
