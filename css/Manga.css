@@ -31,7 +31,7 @@ a {
     opacity: 0.8;
     transition: 0.1s;
     cursor: pointer;
-    user-select: none;
+    -webkit-user-select: none;
     /* display: none; */
 }
 .container .btn__active:active {
@@ -81,7 +81,7 @@ a {
     align-items: center;
     background-color: rgba(0, 16, 33, 0.1);
     overflow: auto;
-    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 }
 .container .sidebar .menu .album {
     position: sticky;
@@ -198,7 +198,7 @@ a {
 }
 @media all and (max-width: 768px) {
     .container .btn__active {
-        right: 50px;
+        right: 15px;
         bottom: 50px;
         font-size: 34px;
     }
