@@ -468,7 +468,7 @@ ul {
     #gallery .gallery {
         display: flex;
         flex-direction: column;
-        height: 1000px;
+        /* height: 1000px; */
     }
     #gallery .gallery .title {
         width: 100%;
@@ -541,7 +541,11 @@ ul {
         width: 70px;
         padding: 10px 0;
     }
-    #gallery .gallery .catalog .catalog__list.doremon .manga__list.chap h4 {
+    #gallery .gallery .catalog .catalog__list .manga__list img {
+        width: 64px;
+        height: 64px;
+    }
+    #gallery .gallery .catalog .catalog__list .manga__list.chap h4 {
         padding: 10px 5px;
     }
 }
