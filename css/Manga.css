@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    -webkit-user-select: none;
 }
 body {
     margin: 0;
@@ -28,10 +29,9 @@ a {
     bottom: 50px;
     right: 50px;
     font-size: 54px;
-    opacity: 0.8;
+    opacity: 0.9;
     transition: 0.1s;
     cursor: pointer;
-    -webkit-user-select: none;
     /* display: none; */
 }
 .container .btn__active:active {
@@ -60,7 +60,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #001021;
+    background-color: #001021ec;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     margin-bottom: 10px;
 }
 .container .sidebar .logo a {
@@ -79,9 +81,10 @@ a {
     /* flex-direction: column; */
     justify-content: flex-start;
     align-items: center;
-    background-color: rgba(0, 16, 33, 0.1);
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     overflow: auto;
-    -webkit-backdrop-filter: blur(15px);
 }
 .container .sidebar .menu .album {
     position: sticky;
@@ -187,6 +190,11 @@ a {
         left: 0;
         width: 50%;
         max-width: 1366px;
+    }
+    .container .sidebar .menu {
+        background-color: rgba(0, 0, 0, 0.3);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
     }
     .container .chap >img {
         width: 100%;
