@@ -141,8 +141,9 @@ a {
     background-color: #001021;
     z-index: 10;
 }
-.container .sidebar .menu .menu__list > a {
-    display: inline-block;
+.container .sidebar .menu .menu__lists .list > a {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -157,7 +158,7 @@ a {
     box-shadow: 1px 4px 3px 1px rgba(1, 2, 70, 0.7);
     transition: 0.15s;
 }
-.container .sidebar .menu .menu__list a:hover {
+.container .sidebar .menu .menu__lists .list a:hover {
     transform: translateX(6px);
 }
 .container .chap {
