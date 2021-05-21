@@ -235,7 +235,7 @@ ul {
     padding: 20px;
     transform: scale(0.9);
     transition: 0.2s;
-    overflow: auto;
+    /* overflow: auto; */
 }
 #gallery .gallery .catalog .catalog__list:hover {
     transform: scale(0.94);
