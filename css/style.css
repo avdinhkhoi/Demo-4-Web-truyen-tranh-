@@ -430,6 +430,11 @@ ul {
     }
     #gallery .gallery .title img {
         padding: 0 10px;
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;        
     }
     #gallery .gallery .catalog {
         width: 100%;
