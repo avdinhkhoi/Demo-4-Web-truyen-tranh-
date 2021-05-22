@@ -34,10 +34,13 @@ a {
     bottom: 50px;
     right: 50px;
     font-size: 54px;
-    opacity: 0.9;
+    opacity: 0.97;
     transition: 0.1s;
     cursor: pointer;
     /* display: none; */
+    /* background-color: #001021; */
+    border-radius: 50%;
+    box-shadow: 1px 3px 6px 0 #001021;
 }
 .container .btn__active:active {
     font-size: 64px;
@@ -242,7 +245,18 @@ a {
     .container .btn__active:active {
         font-size: 44px;
     }
+    .container .sidebar {
+        padding: 0;
+    }
     .container .sidebar.active {
-    width: 75%;
+    width: 70%;
+    left: 15px;
+    border-radius: 20px;
+    }
+    .container .sidebar .menu {
+        height: 70%;
+        border-radius: 10px;
+        padding: 0px 10px 40px;
+
     }
 }

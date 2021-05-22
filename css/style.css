@@ -123,7 +123,7 @@ ul {
     width: 100%;
     height: auto;
     /* margin-top:  150px; */
-    padding-top: 160px;
+    padding-top: 10px;
 }
 #about {
     padding-top: 180px;
@@ -382,6 +382,15 @@ ul {
     color: #000;
 }
 @media all and (max-width: 1024px) {
+    #about {
+        padding-top: 110px;
+    }
+    #gallery {
+        padding-top: 110px;
+    }
+    #contact {
+        padding-top: 110px;
+    }
     .container {
         max-width: unset;
     }
@@ -435,7 +444,7 @@ ul {
         font-size: 1.2rem;
     }
     .container .intro img {
-        padding-top: 40px;
+        padding-top: 10px;
     }
     #about {
         padding-top: 40px;
@@ -468,7 +477,7 @@ ul {
     #gallery .gallery {
         display: flex;
         flex-direction: column;
-        height: 1000px;
+        height: 800px;
     }
     #gallery .gallery .title {
         width: 100%;
