@@ -38,9 +38,6 @@ a {
     transition: 0.1s;
     cursor: pointer;
     /* display: none; */
-    /* background-color: #001021; */
-    border-radius: 50%;
-    box-shadow: 1px 3px 6px 0 #001021;
 }
 .container .btn__active:active {
     font-size: 64px;
@@ -237,6 +234,9 @@ a {
     }
 }
 @media all and (max-width: 768px) {
+    .container .sidebar .menu::-webkit-scrollbar {
+        display: none;
+    }
     .container .btn__active {
         right: 15px;
         bottom: 20px;
