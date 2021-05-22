@@ -44,7 +44,7 @@ a {
 }
 .container .btn__active:active {
     /* font-size: 64px; */
-    transform: scale(1.3);
+    transform: scale(1.4);
 }
 .container .sidebar {
     position: fixed;
@@ -181,7 +181,7 @@ a {
 @media all and (max-width: 1024px) {
     .container .btn__active {
         bottom: 100px;
-        right: 100px;
+        right: 60px;
     }
     .container .sidebar {
         padding: 0;
@@ -242,8 +242,8 @@ a {
 }
 @media all and (max-width: 768px) {
     .container .btn__active {
-        right: 15px;
-        bottom: 35px;
+        right: 50px;
+        bottom: 100px;
     }
     .container .sidebar.active {
     width: 70%;
@@ -251,6 +251,10 @@ a {
     }
 }
 @media all and (max-width: 568px) {
+    .container .btn__active {
+        right: 20px;
+        bottom: 80px;
+    }
     .container .btn__active img {
         width: 45px;
         height: 45px;
