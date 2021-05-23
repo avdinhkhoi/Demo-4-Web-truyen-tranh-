@@ -187,12 +187,13 @@ a {
         top: unset;
         left: 15px;
         bottom: -100%;
-        width: 40%;
+        width: 0;
         max-width: 1366px;
         padding: 0;
     }
     .container .sidebar.active {
-        bottom: 0;
+        top: 0;
+        bottom: 40px;
         left: 15px;
     }
     .container .sidebar .menu {
