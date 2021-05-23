@@ -52,7 +52,7 @@ a {
     left: -100%;
     width: 200px;
     max-width: 200px;
-    height: 100vh;
+    height: 100%;
     padding: 0px 10px;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@ a {
 }
 .container .sidebar.active {
     left: 0;
-    transition: 0.4s cubic-bezier(0.77, 0, 0.175, 1);;
+    transition: 0.8s cubic-bezier(0.77, 0, 0.175, 1);;
 }
 .container .sidebar .logo {
     width: 100%;
