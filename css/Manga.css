@@ -49,7 +49,7 @@ a {
 .container .sidebar {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 200px;
     max-width: 200px;
     height: 100vh;
@@ -60,7 +60,7 @@ a {
     transition: 0.3s cubic-bezier(0.77, 0, 0.175, 1);;
 }
 .container .sidebar.active {
-    left: -100%;
+    left: 0;
     transition: 0.4s cubic-bezier(0.77, 0, 0.175, 1);;
 }
 .container .sidebar .logo {
@@ -184,13 +184,16 @@ a {
         right: 60px;
     }
     .container .sidebar {
-        padding: 0;
-        left: -100%;
-    }
-    .container .sidebar.active {
+        top: unset;
         left: 15px;
+        bottom: -100%;
         width: 40%;
         max-width: 1366px;
+        padding: 0;
+    }
+    .container .sidebar.active {
+        bottom: 0;
+        left: 15px;
     }
     .container .sidebar .menu {
         background-color: rgba(0, 0, 0, 0.3);
@@ -245,9 +248,12 @@ a {
         right: 50px;
         bottom: 100px;
     }
+    .container .sidebar {
+        width: 70%;
+        left: 15px;
+    }
     .container .sidebar.active {
     width: 70%;
-    left: 15px;
     }
 }
 @media all and (max-width: 568px) {
