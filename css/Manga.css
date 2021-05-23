@@ -186,14 +186,14 @@ a {
     .container .sidebar {
         top: unset;
         left: 15px;
-        bottom: -100%;
+        bottom: -150%;
         width: 0;
         max-width: 1366px;
         padding: 0;
     }
     .container .sidebar.active {
-        top: 0;
-        bottom: 40px;
+        height: 100%;
+        bottom: 0;
         left: 15px;
     }
     .container .sidebar .menu {
